@@ -10,5 +10,5 @@ services:
         value: production
       - key: PORT
         value: 3001
-      - key: FRONTEND_URL
+      - key: CORS_ORIGIN
         value: https://p2-pdatashare.vercel.app
