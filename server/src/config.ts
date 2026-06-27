@@ -1,12 +1,14 @@
 import { ServerConfig } from './types';
 
 export function getConfig(): ServerConfig {
+  const allowedOrigins = process.env.CORS_ORIGIN?.split(',').map(s => s.trim().replace(/\/$/, ''))
+    ?? process.env.ALLOWED_ORIGINS?.split(',').map(s => s.trim().replace(/\/$/, ''))
+    ?? ['http://localhost:5173'];
+
   return {
     port:                  parseInt(process.env.PORT ?? '3001', 10),
     nodeEnv:               (process.env.NODE_ENV as any) ?? 'development',
-    allowedOrigins:        process.env.CORS_ORIGIN?.split(',').map(s => s.trim())
-                           ?? process.env.ALLOWED_ORIGINS?.split(',').map(s => s.trim())
-                           ?? ['http://localhost:5173'],
+    allowedOrigins,
     roomIdTtlMs:           parseInt(process.env.ROOM_ID_TTL_MS ?? '3600000', 10),
     ttlCleanupIntervalMs:  parseInt(process.env.TTL_CLEANUP_INTERVAL_MS ?? '600000', 10),
   };
