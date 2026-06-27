@@ -4,7 +4,11 @@ let _socket: Socket | null = null;
 
 export const getSocket = (): Socket => {
   if (!_socket) {
-    _socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001', {
+    const defaultSocketUrl = import.meta.env.PROD
+      ? 'https://p2pdatashare-3.onrender.com'
+      : 'http://localhost:3001';
+
+    _socket = io(import.meta.env.VITE_SOCKET_URL || defaultSocketUrl, {
       transports: ['websocket', 'polling'],
       autoConnect: false,   // Must call socket.connect() explicitly
       reconnectionAttempts: 5,

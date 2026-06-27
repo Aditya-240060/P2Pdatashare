@@ -273,7 +273,7 @@ The `client/vercel.json` is pre-configured for React SPA routing (all paths fall
 2. Set the **Root Directory** to `client`.
 3. Add the environment variable:
    ```
-   VITE_SOCKET_URL=https://your-render-backend-url.onrender.com
+  VITE_SOCKET_URL=https://p2pdatashare-3.onrender.com
    ```
 4. Deploy — Vercel handles the build automatically.
 
@@ -285,7 +285,7 @@ The `server/render.yaml` is pre-configured for zero-config deployment.
 2. Set the **Root Directory** to `server`.
 3. Add the environment variable:
    ```
-   CORS_ORIGIN=https://your-vercel-app-url.vercel.app
+  CORS_ORIGIN=https://p2-pdatashare.vercel.app
    ```
 4. Deploy — Render runs `npm run build && npm start`.
 
