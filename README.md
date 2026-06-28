@@ -2,16 +2,16 @@
 
 > **Serverless, zero-storage, peer-to-peer file sharing — directly from your browser.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-p2pproject.vercel.app-blue?style=for-the-badge&logo=vercel)](https://p2-pproject.vercel.app/)
-[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react)](https://p2-pproject.vercel.app/)
-[![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Socket.io-339933?style=for-the-badge&logo=node.js)](https://p2pproject.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-p2pproject.vercel.app-blue?style=for-the-badge&logo=vercel)](https://p2-pdatashare.vercel.app/)
+[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react)](https://p2-pdatashare.vercel.app/)
+[![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Socket.io-339933?style=for-the-badge&logo=node.js)](https://p2pdatashare-3.onrender.com)
 [![License](https://img.shields.io/badge/License-ISC-green?style=for-the-badge)](LICENSE)
 
 ---
 
 ## 🌐 Live Demo
 
-👉 **[https://p2-pproject.vercel.app/](https://p2-pproject.vercel.app/)**
+👉 **[https://p2-pdatashare.vercel.app/](https://p2-pdatashare.vercel.app/)**
 
 No login. No cloud storage. No file size limits imposed by a server. Just share a link and transfer.
 
@@ -42,20 +42,20 @@ Sender                  Signaling Server              Receiver
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔒 **End-to-end encrypted transfer** — WebRTC DTLS/SRTP encryption by default
-- 🚫 **Zero server storage** — the signaling server never touches your file data
-- ✅ **SHA-256 integrity verification** — file hash checked on receiver side before download
-- ⚡ **Chunked streaming** — files split into 64 KB chunks for efficient transfer
-- 📊 **Live progress tracking** — real-time transfer speed and progress bar
-- 📱 **Responsive UI** — works on desktop and mobile browsers
-- 🛡️ **Rate limiting** — DoS protection on the signaling server
-- 🚀 **No install required** — runs entirely in the browser
+-  **End-to-end encrypted transfer** — WebRTC DTLS/SRTP encryption by default
+-  **Zero server storage** — the signaling server never touches your file data
+-  **SHA-256 integrity verification** — file hash checked on receiver side before download
+-  **Chunked streaming** — files split into 64 KB chunks for efficient transfer
+-  **Live progress tracking** — real-time transfer speed and progress bar
+-  **Responsive UI** — works on desktop and mobile browsers
+-  **Rate limiting** — DoS protection on the signaling server
+-  **No install required** — runs entirely in the browser
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 This project follows a **client-server hybrid architecture** where the server acts purely as a WebRTC signaling and matchmaking service.
 
@@ -105,7 +105,7 @@ This project follows a **client-server hybrid architecture** where the server ac
 
 ---
 
-## 🔐 Security
+##  Security
 
 | Feature | Details |
 |---------|---------|
@@ -119,7 +119,7 @@ This project follows a **client-server hybrid architecture** where the server ac
 
 ---
 
-## 🚀 Getting Started (Local Development)
+##  Getting Started (Local Development)
 
 ### Prerequisites
 
@@ -129,8 +129,8 @@ This project follows a **client-server hybrid architecture** where the server ac
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/P2Pproject.git
-cd P2Pproject
+git clone https://github.com/your-username/P2Pdatashare.git
+cd P2Pdatashare
 ```
 
 ### 2. Install Dependencies
@@ -202,7 +202,7 @@ npm run dev
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 **Client (Vitest):**
 ```bash
@@ -228,7 +228,7 @@ Tests cover:
 
 ---
 
-## 📦 Project Structure
+##  Project Structure
 
 ```
 P2Pproject/
@@ -263,7 +263,7 @@ P2Pproject/
 
 ---
 
-## ☁️ Deployment
+##  Deployment
 
 ### Frontend — Vercel
 
@@ -291,7 +291,7 @@ The `server/render.yaml` is pre-configured for zero-config deployment.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
@@ -303,13 +303,13 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **ISC License**.
 
 ---
 
 <div align="center">
-  <strong>Built with ❤️ using WebRTC, React, and Node.js</strong><br/>
-  <a href="https://p2-pproject.vercel.app/">🔗 Try it live → p2-pproject.vercel.app</a>
+  <strong>Built with  using WebRTC, React, and Node.js</strong><br/>
+  <a href="https://p2-pdatashare.vercel.app/">🔗 Try it live → p2-pdatashare.vercel.app</a>
 </div>
